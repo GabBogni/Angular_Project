@@ -1,11 +1,4 @@
-<header>
-    <h1> Header do {{title}}</h1>
-</header>
-
-<main>
-    Corpo do {{title}}
-</main>
-
-<footer>
-    Feito por {{author}}
-</footer>
+<h2> Lista de quase todos filmes da franquia {{franquia}}</h2>
+<ul>
+    <li *ngFor = "for let filme of filmes"> {{filme.nome}} / {{filme.ano}}</li>
+</ul>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { lista_filmes } from '../lista_filmes';
+import {Filme} from '../filme';
 
 @Component({
   selector: 'app-component2',
@@ -7,12 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component2Component implements OnInit {
 
-  constructor() { }
 
-  title:string = "Componente 2"
-  author:string = "Gabriel P.B"
+  constructor() { }
 
   ngOnInit(): void {
   }
+
+  franquia = "Exterminador do Futuro";
+  filmes: Filme[] = lista_filmes;
 
 }
